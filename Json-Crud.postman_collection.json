@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "40093ea2-3a00-4ff9-a0b9-33b8bdf2ad2f",
+		"name": "Json-Crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25392734"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Item 1\",\r\n  \"description\": \"This is item 1.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/items",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All_Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Item 1\",\r\n  \"description\": \"This is item 1.11\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/items/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/items/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_By_Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/items/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
